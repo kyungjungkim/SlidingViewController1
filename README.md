@@ -1,2 +1,2 @@
 # iOS
-SlidingBar
+SlidingView
