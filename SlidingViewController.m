@@ -1,5 +1,5 @@
 //
-//  SlideView.m
+//  SlidingViewController.m
 //  CustomTableView
 //
 //  Created by kkj on 18/11/12.
