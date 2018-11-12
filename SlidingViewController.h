@@ -1,5 +1,5 @@
 //
-//  SlideView.h
+//  SlidingViewController.h
 //  CustomTableView
 //
 //  Created by kkj on 18/11/08.
