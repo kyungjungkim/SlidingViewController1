@@ -1,5 +1,8 @@
 # iOS
-SlidingView
+SlidingViewController1
+
+
+Simple Example
 
 
 
