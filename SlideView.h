@@ -15,7 +15,7 @@ typedef enum {
 } AnimationType;
 
 
-@protocol SlideViewDelegate
+@protocol SlidingViewDelegate
 
 @required
 
@@ -24,7 +24,7 @@ typedef enum {
 @end
 
 
-@interface SlideView : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface SlidingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
 
 	UITableView *uiTableView;
 	NSArray *arrayData;
