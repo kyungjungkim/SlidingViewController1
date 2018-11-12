@@ -11,7 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 
-@implementation SlideView
+@implementation SlidingViewController
 
 @synthesize uiTableView;
 @synthesize arrayData, heightOfCell, refView;
@@ -144,9 +144,9 @@
 }	
 
 
-#pragma mark - DropDownViewDelegate
+#pragma mark - SlidingViewDelegate
 
-- (void)dropDownCellSelected:(NSInteger)returnIndex {
+- (void)SlidngViewCellSelected:(NSInteger)returnIndex {
 	
 }	
 
