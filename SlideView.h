@@ -19,7 +19,7 @@ typedef enum {
 
 @required
 
-- (void)SlideViewCellSelected:(NSInteger)returnIndex;
+- (void)SlidingViewCellSelected:(NSInteger)returnIndex;
 
 @end
 
