@@ -6,11 +6,14 @@ Simple Example
 
 // UISwipeGesture
 upSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuUp)];
+
 upSwipeGesture.direction = UISwipeGestureRecognizerDirectionUp;
+
 [uivTopMenu addGestureRecognizer:upSwipeGesture];
 
 // TopMenu(Hamburger)
 uivTopMenu.frame = CGRectMake(0.0f, -(uivTopMenu.frame.size.height), uivTopMenu.frame.size.width, uivTopMenu.frame.size.height);
+
 [self.view addSubview:uivTopMenu];
 
 [uivTopMenu setHidden:YES];
