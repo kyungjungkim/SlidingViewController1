@@ -2,6 +2,7 @@
 
 
 Simple Example
+--------------
 
 // UISwipeGesture
 upSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuUp)];
@@ -19,9 +20,8 @@ uivTopMenu.frame = CGRectMake(0.0f, -(uivTopMenu.frame.size.height), uivTopMenu.
 
     
 
-
-
 License
+-------
 
 Copyright 2012-2014 Jeremy Feinstein
 
