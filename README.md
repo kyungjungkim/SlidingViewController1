@@ -6,9 +6,7 @@ Simple Example
 
 // UISwipeGesture
 upSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuUp)];
-
 upSwipeGesture.direction = UISwipeGestureRecognizerDirectionUp;
-
 [uivTopMenu addGestureRecognizer:upSwipeGesture];
 
 // TopMenu(Hamburger)
