@@ -12,7 +12,7 @@ upSwipeGesture.direction = UISwipeGestureRecognizerDirectionUp;
 // TopMenu(Hamburger)
 uivTopMenu.frame = CGRectMake(0.0f, -(uivTopMenu.frame.size.height), uivTopMenu.frame.size.width, uivTopMenu.frame.size.height);
 [self.view addSubview:uivTopMenu];
-    
+
 [uivTopMenu setHidden:YES];
     
 // uibServiceInfo
