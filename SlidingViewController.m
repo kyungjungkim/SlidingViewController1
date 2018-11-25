@@ -2,7 +2,7 @@
 //  SlidingViewController.m
 //  CustomTableView
 //
-//  Created by kkj on 18/11/12.
+//  Created by KyungjungKim on 18/11/12.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
@@ -112,9 +112,9 @@
     }
     
     cell.textLabel.textAlignment = NSTextAlignmentLeft;
-	cell.textLabel.text = [arrayData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [arrayData objectAtIndex:indexPath.row];
 		
-	return cell;
+    return cell;
 }	
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
