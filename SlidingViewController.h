@@ -1,9 +1,9 @@
 //
 //  SlidingViewController.h
-//  CustomTableView
+//  SlidingViewController
 //
-//  Created by kkj on 18/11/08.
-//  Copyright 2018 __kkj__. All rights reserved.
+//  Created by KyungjungKim on 18/11/08.
+//  Copyright 2018 __KyungjungKim__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
