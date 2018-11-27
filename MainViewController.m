@@ -1,9 +1,9 @@
 //
 //  MainViewController.m
-//  PCO2018SmartNavi
+//  MainViewController
 //
-//  Created by KT on 2017. 5. 19..
-//  Copyright © 2017년 KT. All rights reserved.
+//  Created by Kyungjung Kim on 2018. 8. 28..
+//  Copyright © Kyungjung Kim. All rights reserved.
 //
 
 #import "MainViewController.h"
