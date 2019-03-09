@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuTableViewCell.h"
 
-@interface MainViewController : UIViewController {
+@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     UISwipeGestureRecognizer *upSwipeGesture;
-    UIViewController *left;
-    UIView *uivTopMenu;
+    UITableView *left;
+    MenuTableViewCell *cell;
 }
 
 - (IBAction)menuOpenBtnClick:(UIButton *)sender;
