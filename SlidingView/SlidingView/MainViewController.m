@@ -21,12 +21,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     left = [[UIViewController alloc] init];
-    [left.view setFrame:CGRectMake(-self.view.frame.size.width, 100.0f, self.view.frame.size.width - 100, 300.0f)];
+    [left.view setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 100.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 100.0f)];
     left.view.backgroundColor = UIColor.blackColor;
+    left.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     uivTopMenu = left.view;
     [self.view addSubview:uivTopMenu];
     
-    [uivTopMenu setHidden:YES];
+    // UISwipeGesture
+    UISwipeGestureRecognizer *upSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuClose)];
+    upSwipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+    [uivTopMenu addGestureRecognizer:upSwipeGesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,14 +53,22 @@
     
     // Show a topmenu(Hamburger Menu) in the map.
     [UIView animateWithDuration:0.5f animations:^{
-        [self->uivTopMenu setFrame:CGRectMake(0.0f, 100.0f, self.view.frame.size.width - 100, 300.0f)];
+        [self->uivTopMenu setFrame:CGRectMake(0.0f, 100.0f, self.view.frame.size.width - 100, self.view.frame.size.height - 100.0f)];
     } completion:^(BOOL finished) {
         if (finished) {
             // Show contents in the HamburgerMenu.
-                
         }
     }];
 }
 
+- (void)swipeMenuClose {
+    [UIView animateWithDuration:0.5f animations:^{
+        [self->uivTopMenu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 100.0f, self.view.frame.size.width - 100, self.view.frame.size.height - 100.0f)];
+    } completion:^(BOOL finished) {
+        if (finished) {
+            // Show contents in the HamburgerMenu.
+        }
+    }];
+}
 
 @end
