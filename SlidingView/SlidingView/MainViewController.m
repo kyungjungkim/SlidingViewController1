@@ -20,17 +20,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    left = [[UITableView alloc] init];
-    left.dataSource = self;
-    left.delegate = self;
-    [left setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 100.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 100.0f)];
-    left.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.view addSubview:left];
+    isMenuOpen = NO;
+    
+    menu = [[UITableView alloc] init];
+    menu.dataSource = self;
+    menu.delegate = self;
+    [menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 100.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 100.0f)];
+    menu.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    menu.backgroundColor = UIColor.lightGrayColor;
+    menu.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.view addSubview:menu];
     
     // UISwipeGesture
     UISwipeGestureRecognizer *upSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuClose)];
     upSwipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
-    [left addGestureRecognizer:upSwipeGesture];
+    [menu addGestureRecognizer:upSwipeGesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,29 +53,36 @@
 
 // Open the hamburger menu.
 - (IBAction)menuOpenBtnClick:(UIButton *)sender {
-    // Show a topmenu(Hamburger Menu) in the map.
-    [UIView animateWithDuration:0.5f animations:^{
-        [self->left setFrame:CGRectMake(0.0f, 100.0f, self.view.frame.size.width - 100, self.view.frame.size.height - 100.0f)];
-    } completion:^(BOOL finished) {
-        if (finished) {
-            // Show contents in the HamburgerMenu.
-            self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 10,
+    if (isMenuOpen == NO) {
+        // Show a topmenu(Hamburger Menu) in the map.
+        [UIView animateWithDuration:0.5f animations:^{
+            [self->menu setFrame:CGRectMake(0.0f, 100.0f, self.view.frame.size.width - 100, self.view.frame.size.height - 100.0f)];
+        } completion:^(BOOL finished) {
+            if (finished) {
+                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 20,
                                                  self->cell.uilGreetings.frame.size.width, self->cell.uilGreetings.frame.size.height);
-            [self->cell.uilGreetings setAlpha:1.0f];
-        }
-    }];
+                [self->cell.uilGreetings setAlpha:1.0f];
+                
+                self->isMenuOpen = YES;
+            }
+        }];
+    }
 }
 
 - (void)swipeMenuClose {
-    [UIView animateWithDuration:0.5f animations:^{
-        [self->left setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 100.0f, self.view.frame.size.width - 100, self.view.frame.size.height - 100.0f)];
-    } completion:^(BOOL finished) {
-        if (finished) {
-            self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y + 10,
+    if (isMenuOpen == YES) {
+        [UIView animateWithDuration:0.5f animations:^{
+            [self->menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 100.0f, self.view.frame.size.width - 100, self.view.frame.size.height - 100.0f)];
+        } completion:^(BOOL finished) {
+            if (finished) {
+                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y + 20,
                                                        self->cell.uilGreetings.frame.size.width, self->cell.uilGreetings.frame.size.height);
-            [self->cell.uilGreetings setAlpha:1.0f];
-        }
-    }];
+                [self->cell.uilGreetings setAlpha:1.0f];
+                
+                self->isMenuOpen = NO;
+            }
+        }];
+    }
 }
 
 

@@ -11,7 +11,8 @@
 
 @interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     UISwipeGestureRecognizer *upSwipeGesture;
-    UITableView *left;
+    UITableView *menu;
+    BOOL isMenuOpen;
     MenuTableViewCell *cell;
 }
 
