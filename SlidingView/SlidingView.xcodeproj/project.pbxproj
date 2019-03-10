@@ -65,13 +65,11 @@
 		A1445D21223136720077FEE3 /* SlidingView */ = {
 			isa = PBXGroup;
 			children = (
+				A1B980122234B30E0010B000 /* Sliding */,
 				A1445D23223136720077FEE3 /* AppDelegate.m */,
 				A1445D22223136720077FEE3 /* AppDelegate.h */,
 				A1445D25223136720077FEE3 /* MainViewController.h */,
 				A1445D3B223136F00077FEE3 /* MainViewController.m */,
-				A192DAC12233D9C400BAD118 /* MenuTableViewCell.h */,
-				A192DAC22233D9C400BAD118 /* MenuTableViewCell.m */,
-				A192DAC32233D9C400BAD118 /* MenuTableViewCell.xib */,
 				A1445D28223136720077FEE3 /* Main.storyboard */,
 				A1445D2B223136740077FEE3 /* Assets.xcassets */,
 				A1445D2D223136740077FEE3 /* LaunchScreen.storyboard */,
@@ -80,6 +78,16 @@
 				A1445D3C223136F00077FEE3 /* LICENSE */,
 			);
 			path = SlidingView;
+			sourceTree = "<group>";
+		};
+		A1B980122234B30E0010B000 /* Sliding */ = {
+			isa = PBXGroup;
+			children = (
+				A192DAC12233D9C400BAD118 /* MenuTableViewCell.h */,
+				A192DAC22233D9C400BAD118 /* MenuTableViewCell.m */,
+				A192DAC32233D9C400BAD118 /* MenuTableViewCell.xib */,
+			);
+			path = Sliding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
