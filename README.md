@@ -1,15 +1,13 @@
 # SlidingViewController1
 
 
-Simple Example
---------------
-
 <img src="Screen Shot 1.png" align="left" hspace="10" vspace="10">
-<img src="Screen Shot 2.png" align="left" hspace="10" vspace="10">
-<br>    
+<img src="Screen Shot 2.png" align="left" hspace="10" vspace="10">   
 
-License
--------
+  
+
+
+# License
 
 Copyright 2018 Kyungjung Kim
 
