@@ -4,8 +4,9 @@
 Simple Example
 --------------
 
-<img src="Screen Shot 1.png" align="left" width="200" hspace="10" vspace="10">
-    
+<img src="Screen Shot 1.png" align="left" hspace="10" vspace="10">
+<img src="Screen Shot 2.png" align="left" hspace="10" vspace="10">
+<br>    
 
 License
 -------
