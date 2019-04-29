@@ -4,7 +4,7 @@
 Simple Example
 --------------
 
-
+<img src="Screen Shot 1.png" align="left" width="200" hspace="10" vspace="10">
     
 
 License
