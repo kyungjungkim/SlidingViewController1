@@ -1,9 +1,9 @@
 # SlidingViewController1
 
-<br>
+
 <img src="Screen Shot 1.png" align="left" hspace="10" vspace="10">
 <img src="Screen Shot 2.png" align="left" hspace="10" vspace="10">
-<br>
+
 
 
 License
