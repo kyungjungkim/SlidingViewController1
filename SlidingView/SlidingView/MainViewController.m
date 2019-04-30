@@ -54,12 +54,11 @@
 // Open the hamburger menu.
 - (IBAction)menuOpenBtnClick:(UIButton *)sender {
     if (isMenuOpen == NO) {
-        // Show a topmenu(Hamburger Menu) in the map.
         [UIView animateWithDuration:0.5f animations:^{
             [self->menu setFrame:CGRectMake(0.0f, 20.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
-                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 20,
+                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 20.0f,
                                                  self->cell.uilGreetings.frame.size.width, self->cell.uilGreetings.frame.size.height);
                 [self->cell.uilGreetings setAlpha:1.0f];
                 
@@ -89,7 +88,7 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 130.0f;
+    return 60.0f;
 }
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
