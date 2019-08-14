@@ -114,7 +114,7 @@
                 if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
                     isAll1Clicked = NO;
                 
-                [officerSearchTableview layoutIfNeeded];
+                [menu layoutIfNeeded];
                 
                 return cell;
             } else if (!isAll1) { // 해제.
@@ -126,7 +126,7 @@
                 if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
                     isAll1Clicked = NO;
                 
-                [officerSearchTableview layoutIfNeeded];
+                [menu layoutIfNeeded];
             }
         }
     */
