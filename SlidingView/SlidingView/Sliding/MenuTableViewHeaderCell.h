@@ -1,8 +1,8 @@
 //
-//  MenuTableViewCell.h
+//  TableViewHeaderCell.h
 //  SlidingView
 //
-//  Created by Kyungjung Kim on 09/03/2019.
+//  Created by Kyungjung Kim on 2019/11/04.
 //  Copyright © 2019 Kyungjung Kim. All rights reserved.
 //
 
@@ -10,10 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MenuTableViewCell : UITableViewCell {
-    bool isAll1Clicked;
-    int clickedSectionNum;
-}
+@interface MenuTableViewHeaderCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *uilGreetings;
 

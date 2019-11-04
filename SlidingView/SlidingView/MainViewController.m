@@ -25,7 +25,7 @@
     menu = [[UITableView alloc] init];
     menu.dataSource = self;
     menu.delegate = self;
-    [menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 20.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
+    [menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
     menu.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     menu.backgroundColor = UIColor.lightGrayColor;
     menu.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -55,7 +55,7 @@
 - (IBAction)menuOpenBtnClick:(UIButton *)sender {
     if (isMenuOpen == NO) {
         [UIView animateWithDuration:0.5f animations:^{
-            [self->menu setFrame:CGRectMake(0.0f, 20.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
+            [self->menu setFrame:CGRectMake(0.0f, 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
                 self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 20.0f,
@@ -71,10 +71,10 @@
 - (void)swipeMenuClose {
     if (isMenuOpen == YES) {
         [UIView animateWithDuration:0.5f animations:^{
-            [self->menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 20.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
+            [self->menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
-                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y + 20,
+                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y + 20.0f,
                                                        self->cell.uilGreetings.frame.size.width, self->cell.uilGreetings.frame.size.height);
                 [self->cell.uilGreetings setAlpha:1.0f];
                 
@@ -87,12 +87,28 @@
 
 #pragma mark - UITableViewDelegate
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60.0f;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60.0f;
 }
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
     return 1;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    static NSString *CellIdentifier = @"HeaderCell";
+    
+    cell = (MenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MenuTableViewHeaderCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    return cell;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -135,11 +151,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
-    return 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
