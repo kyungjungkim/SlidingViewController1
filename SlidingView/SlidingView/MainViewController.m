@@ -15,7 +15,6 @@
 
 @implementation MainViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -28,7 +27,7 @@
     [menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
     menu.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     menu.backgroundColor = UIColor.lightGrayColor;
-    menu.separatorStyle = UITableViewCellSeparatorStyleNone;
+    menu.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:menu];
     
     // UISwipeGesture
@@ -88,21 +87,25 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 60.0f;
+    return 45.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60.0f;
 }
 
-- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+    return 7;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     static NSString *CellIdentifier = @"HeaderCell";
     
-    cell = (MenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell = (MenuTableViewHeaderCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MenuTableViewHeaderCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
@@ -114,11 +117,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
-    cell = (MenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
+    cell1 = (MenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell1 == nil) {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MenuTableViewCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
+        cell1 = [nib objectAtIndex:0];
     }
+    
+    if (0 != indexPath.row) {
+        cell1.uilGreetings.text = @"";
+    }
+    
     /*
         if (isAll1Clicked && clickedSectionNum == 0) { // 전체버튼 클릭
             if (isAll1) { // 선택.
@@ -147,7 +155,7 @@
         }
     */
     
-    return cell;
+    return cell1;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

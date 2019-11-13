@@ -16,6 +16,7 @@
     UITableView *menu;
     BOOL isMenuOpen;
     MenuTableViewHeaderCell *cell;
+    MenuTableViewCell *cell1;
 }
 
 - (IBAction)menuOpenBtnClick:(UIButton *)sender;

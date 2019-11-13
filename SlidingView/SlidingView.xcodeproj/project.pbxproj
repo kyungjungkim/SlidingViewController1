@@ -16,8 +16,8 @@
 		A1445D3F223136F00077FEE3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A1445D3C223136F00077FEE3 /* LICENSE */; };
 		A16649A0236FA8960071E7D8 /* MenuTableViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A166499E236FA8960071E7D8 /* MenuTableViewHeaderCell.m */; };
 		A16649A1236FA8970071E7D8 /* MenuTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A166499F236FA8960071E7D8 /* MenuTableViewHeaderCell.xib */; };
-		A192DAC42233D9C400BAD118 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A192DAC22233D9C400BAD118 /* MenuTableViewCell.m */; };
-		A192DAC52233D9C400BAD118 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A192DAC32233D9C400BAD118 /* MenuTableViewCell.xib */; };
+		A16ACCA5237C36F100871FE7 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16ACCA3237C36F100871FE7 /* MenuTableViewCell.m */; };
+		A16ACCA6237C36F100871FE7 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16ACCA4237C36F100871FE7 /* MenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		A166499D236FA8960071E7D8 /* MenuTableViewHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewHeaderCell.h; sourceTree = "<group>"; };
 		A166499E236FA8960071E7D8 /* MenuTableViewHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewHeaderCell.m; sourceTree = "<group>"; };
 		A166499F236FA8960071E7D8 /* MenuTableViewHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewHeaderCell.xib; sourceTree = "<group>"; };
-		A192DAC12233D9C400BAD118 /* MenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
-		A192DAC22233D9C400BAD118 /* MenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
-		A192DAC32233D9C400BAD118 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		A16ACCA2237C36F100871FE7 /* MenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		A16ACCA3237C36F100871FE7 /* MenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		A16ACCA4237C36F100871FE7 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +91,9 @@
 				A166499D236FA8960071E7D8 /* MenuTableViewHeaderCell.h */,
 				A166499E236FA8960071E7D8 /* MenuTableViewHeaderCell.m */,
 				A166499F236FA8960071E7D8 /* MenuTableViewHeaderCell.xib */,
-				A192DAC12233D9C400BAD118 /* MenuTableViewCell.h */,
-				A192DAC22233D9C400BAD118 /* MenuTableViewCell.m */,
-				A192DAC32233D9C400BAD118 /* MenuTableViewCell.xib */,
+				A16ACCA2237C36F100871FE7 /* MenuTableViewCell.h */,
+				A16ACCA3237C36F100871FE7 /* MenuTableViewCell.m */,
+				A16ACCA4237C36F100871FE7 /* MenuTableViewCell.xib */,
 			);
 			path = Sliding;
 			sourceTree = "<group>";
@@ -155,11 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16ACCA6237C36F100871FE7 /* MenuTableViewCell.xib in Resources */,
 				A1445D2F223136740077FEE3 /* LaunchScreen.storyboard in Resources */,
 				A1445D2C223136740077FEE3 /* Assets.xcassets in Resources */,
 				A16649A1236FA8970071E7D8 /* MenuTableViewHeaderCell.xib in Resources */,
 				A1445D3F223136F00077FEE3 /* LICENSE in Resources */,
-				A192DAC52233D9C400BAD118 /* MenuTableViewCell.xib in Resources */,
 				A1445D2A223136720077FEE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +173,8 @@
 			files = (
 				A16649A0236FA8960071E7D8 /* MenuTableViewHeaderCell.m in Sources */,
 				A1445D32223136740077FEE3 /* main.m in Sources */,
+				A16ACCA5237C36F100871FE7 /* MenuTableViewCell.m in Sources */,
 				A1445D24223136720077FEE3 /* AppDelegate.m in Sources */,
-				A192DAC42233D9C400BAD118 /* MenuTableViewCell.m in Sources */,
 				A1445D3E223136F00077FEE3 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
