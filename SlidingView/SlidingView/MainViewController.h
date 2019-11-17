@@ -17,6 +17,10 @@
     BOOL isMenuOpen;
     MenuTableViewHeaderCell *cell;
     MenuTableViewCell *cell1;
+    
+    BOOL isAll1Clicked;
+    BOOL clickedSectionNum;
+    BOOL isAll1;
 }
 
 - (IBAction)menuOpenBtnClick:(UIButton *)sender;

@@ -27,6 +27,7 @@
                         <rect key="frame" x="234" y="10" width="70" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
+                        <state key="highlighted" title="Highlighted"/>
                     </button>
                 </subviews>
             </tableViewCellContentView>

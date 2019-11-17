@@ -53,11 +53,11 @@
 // Open the hamburger menu.
 - (IBAction)menuOpenBtnClick:(UIButton *)sender {
     if (isMenuOpen == NO) {
-        [UIView animateWithDuration:0.5f animations:^{
+        [UIView animateWithDuration:0.8f animations:^{
             [self->menu setFrame:CGRectMake(0.0f, 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
-                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 20.0f,
+                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y - 10.0f,
                                                  self->cell.uilGreetings.frame.size.width, self->cell.uilGreetings.frame.size.height);
                 [self->cell.uilGreetings setAlpha:1.0f];
                 
@@ -69,11 +69,11 @@
 
 - (void)swipeMenuClose {
     if (isMenuOpen == YES) {
-        [UIView animateWithDuration:0.5f animations:^{
+        [UIView animateWithDuration:0.8f animations:^{
             [self->menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
-                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y + 20.0f,
+                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x, self->cell.uilGreetings.frame.origin.y + 10.0f,
                                                        self->cell.uilGreetings.frame.size.width, self->cell.uilGreetings.frame.size.height);
                 [self->cell.uilGreetings setAlpha:1.0f];
                 
@@ -127,33 +127,32 @@
         cell1.uilGreetings.text = @"";
     }
     
-    /*
-        if (isAll1Clicked && clickedSectionNum == 0) { // 전체버튼 클릭
-            if (isAll1) { // 선택.
-                [cell setSelected:YES animated:YES];
-                [selectedName addObject:cell.nameLbl.text];
+    
+    if (isAll1Clicked && clickedSectionNum == 0) { // 전체버튼 클릭
+        if (isAll1) { // 선택.
+            [cell setSelected:YES animated:YES];
+            //[selectedName addObject:cell.nameLbl.text];
 
-                [[isSectionSelected objectForKey:[NSNumber numberWithLong:indexPath.section]] isEqualToString:@"YES"];
+            //[[isSectionSelected objectForKey:[NSNumber numberWithLong:indexPath.section]] isEqualToString:@"YES"];
                 
-                if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
-                    isAll1Clicked = NO;
+            //if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
+                isAll1Clicked = NO;
                 
-                [menu layoutIfNeeded];
+            [menu layoutIfNeeded];
                 
-                return cell;
-            } else if (!isAll1) { // 해제.
-                [cell setSelected:NO animated:YES];
-                [selectedName removeObjectAtIndex:indexPath.row];
+            return cell1;
+        } else if (!isAll1) { // 해제.
+            [cell setSelected:NO animated:YES];
+            //[selectedName removeObjectAtIndex:indexPath.row];
                 
-                [[isSectionSelected objectForKey:[NSNumber numberWithLong:indexPath.section]] isEqualToString:@"NO"];
+            //[[isSectionSelected objectForKey:[NSNumber numberWithLong:indexPath.section]] isEqualToString:@"NO"];
                 
-                if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
-                    isAll1Clicked = NO;
+//            if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
+//                isAll1Clicked = NO;
                 
-                [menu layoutIfNeeded];
-            }
+            [menu layoutIfNeeded];
         }
-    */
+    }
     
     return cell1;
 }
