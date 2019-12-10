@@ -15,6 +15,8 @@
 
 @implementation MainViewController
 
+@synthesize uiScrollView, uiTableView1, uiTableView2, uiTableView3;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +36,13 @@
     UISwipeGestureRecognizer *leftSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuClose)];
     leftSwipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
     [menu addGestureRecognizer:leftSwipeGesture];
+    
+    
+    [uiScrollView setContentSize:CGSizeMake(uiScrollView.frame.size.width * 3, uiScrollView.frame.size.height)];
+    
+    [uiTableView1 setFrame:CGRectMake(0.0f, 0.0f, uiScrollView.frame.size.width, uiScrollView.frame.size.height)];
+    [uiTableView2 setFrame:CGRectMake(uiScrollView.frame.size.width, 0.0f, uiScrollView.frame.size.width, uiScrollView.frame.size.height)];
+    [uiTableView3 setFrame:CGRectMake(uiScrollView.frame.size.width * 2, 0.0f, uiScrollView.frame.size.width, uiScrollView.frame.size.height)];
 }
 
 - (void)didReceiveMemoryWarning {

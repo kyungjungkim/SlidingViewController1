@@ -23,6 +23,12 @@
     BOOL isAll1;
 }
 
+
+@property (weak, nonatomic) IBOutlet UIScrollView *uiScrollView;
+@property (weak, nonatomic) IBOutlet UITableView *uiTableView1;
+@property (weak, nonatomic) IBOutlet UITableView *uiTableView2;
+@property (weak, nonatomic) IBOutlet UITableView *uiTableView3;
+
 - (IBAction)menuOpenBtnClick:(UIButton *)sender;
 
 @end
