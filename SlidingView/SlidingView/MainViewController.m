@@ -23,13 +23,10 @@
     
     isMenuOpen = NO;
     
-    menu = [[UITableView alloc] init];
+//    menu = [[UITableView alloc] init];
     menu.dataSource = self;
     menu.delegate = self;
     [menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
-    menu.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    menu.backgroundColor = UIColor.lightGrayColor;
-    menu.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:menu];
     
     // UISwipeGesture

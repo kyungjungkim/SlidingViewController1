@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Menu.h"
 #import "MenuTableViewHeaderCell.h"
 #import "MenuTableViewCell.h"
 
 @interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     UISwipeGestureRecognizer *upSwipeGesture;
-    UITableView *menu;
+    Menu *menu;
     BOOL isMenuOpen;
     MenuTableViewHeaderCell *cell;
     MenuTableViewCell *cell1;
