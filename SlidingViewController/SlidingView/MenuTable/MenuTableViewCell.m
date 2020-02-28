@@ -10,6 +10,8 @@
 
 @implementation MenuTableViewCell
 
+@synthesize uiBCheck;
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -19,6 +21,7 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+    NSLog(@"selected: %d", selected);
 }
 
 @end

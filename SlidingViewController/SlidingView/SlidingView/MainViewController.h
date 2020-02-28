@@ -8,24 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MenuTableViewHeaderCell.h"
+#import "MenuTableViewHeaderViewController.h"
 #import "MenuTableViewCell.h"
 
-@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+
+@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, HeaderViewCellDelegate> {
     UISwipeGestureRecognizer *upSwipeGesture;
     
     UITableView *menu;
-    MenuTableViewHeaderCell *cell;
+    MenuTableViewHeaderViewController *cell;
     MenuTableViewCell *cell1;
     
-    BOOL isAll1Clicked;
-    BOOL clickedSectionNum;
-    BOOL isAll1;
     BOOL isMenuOpen;
 }
 
 @property (nonatomic) UITableView *menu;
-@property (nonatomic) MenuTableViewHeaderCell *cell;
+@property (nonatomic) MenuTableViewHeaderViewController *cell;
 @property (nonatomic) MenuTableViewCell *cell1;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *uiScrollView;

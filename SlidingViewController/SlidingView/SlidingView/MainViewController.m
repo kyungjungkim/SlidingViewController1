@@ -8,7 +8,6 @@
 
 #import "MainViewController.h"
 
-
 @interface MainViewController ()
 
 @end
@@ -26,8 +25,6 @@
     menu = [[UITableView alloc] init];
     menu.delegate = self;
     menu.dataSource = self;
-    [menu registerNib:[UINib nibWithNibName:@"MenuTableViewHeaderCell" bundle:nil] forCellReuseIdentifier:@"HeaderCell"];
-    [menu registerNib:[UINib nibWithNibName:@"MenuTableViewCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
     menu.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     menu.backgroundColor = UIColor.lightGrayColor;
     //    menu.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
@@ -35,14 +32,16 @@
     
     [menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 20.0f)];
     
+    [menu registerNib:[UINib nibWithNibName:@"MenuTableViewCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
+    
     [self.view addSubview:menu];
     
-
     
     // UISwipeGesture
     UISwipeGestureRecognizer *leftSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeMenuClose)];
     leftSwipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
     [menu addGestureRecognizer:leftSwipeGesture];
+    
     
     
     [uiScrollView setContentSize:CGSizeMake(uiScrollView.frame.size.width * 3, uiScrollView.frame.size.height)];
@@ -73,11 +72,11 @@
             [self->menu setFrame:CGRectMake(0.0f, 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
-                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x,
-                                                           self->cell.uilGreetings.frame.origin.y - 10.0f,
-                                                           self->cell.uilGreetings.frame.size.width,
-                                                           self->cell.uilGreetings.frame.size.height);
-                [self->cell.uilGreetings setAlpha:1.0f];
+                self->cell.uiBCheck.frame = CGRectMake(self->cell.uiBCheck.frame.origin.x,
+                                                       self->cell.uiBCheck.frame.origin.y - 10.0f,
+                                                       self->cell.uiBCheck.frame.size.width,
+                                                       self->cell.uiBCheck.frame.size.height);
+                [self->cell.uiBCheck setAlpha:1.0f];
             }
         }];
         
@@ -93,11 +92,11 @@
             [self->menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
-                self->cell.uilGreetings.frame = CGRectMake(self->cell.uilGreetings.frame.origin.x,
-                                                                              self->cell.uilGreetings.frame.origin.y + 10.0f,
-                                                                              self->cell.uilGreetings.frame.size.width,
-                                                                              self->cell.uilGreetings.frame.size.height);
-                [self->cell.uilGreetings setAlpha:1.0f];
+                self->cell.uiBCheck.frame = CGRectMake(self->cell.uiBCheck.frame.origin.x,
+                                                       self->cell.uiBCheck.frame.origin.y + 10.0f,
+                                                       self->cell.uiBCheck.frame.size.width,
+                                                       self->cell.uiBCheck.frame.size.height);
+                [self->cell.uiBCheck setAlpha:1.0f];
                 
                 self->isMenuOpen = NO;
             }
@@ -125,15 +124,10 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    static NSString *CellIdentifier = @"HeaderCell";
+    cell = [MenuTableViewHeaderViewController new];
+    cell.delegate = self;
     
-    cell = (MenuTableViewHeaderCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MenuTableViewHeaderCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
-    
-    return cell;
+    return cell.view;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -150,28 +144,30 @@
     }
     
     
+    NSLog(@"isAll1: %d", isAll1);
+    NSLog(@"isAll1Clicked: %d, clickedSectionNum: %d", isAll1Clicked, clickedSectionNum);
     if (isAll1Clicked && clickedSectionNum == 0) { // 전체버튼 클릭
         if (isAll1) { // 선택.
-            [cell setSelected:YES animated:YES];
-            //[selectedName addObject:cell.nameLbl.text];
+//            [cell1 setSelected:YES animated:YES];
+            cell1.uiBCheck.titleLabel.text = @"ON";
 
             //[[isSectionSelected objectForKey:[NSNumber numberWithLong:indexPath.section]] isEqualToString:@"YES"];
                 
-            //if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
-                isAll1Clicked = NO;
+//            if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
                 
             [menu layoutIfNeeded];
                 
             return cell1;
         } else if (!isAll1) { // 해제.
-            [cell setSelected:NO animated:YES];
+//            [cell1 setSelected:NO animated:YES];
+            cell1.uiBCheck.titleLabel.text = @"OFF";
+            
             //[selectedName removeObjectAtIndex:indexPath.row];
                 
             //[[isSectionSelected objectForKey:[NSNumber numberWithLong:indexPath.section]] isEqualToString:@"NO"];
                 
 //            if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
-//                isAll1Clicked = NO;
-                
+            
             [menu layoutIfNeeded];
         }
     }
@@ -180,6 +176,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"didSelect");
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -195,6 +192,18 @@
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     
     return @"";
+}
+
+
+#pragma mark - HeaderCellDelegate
+
+- (void)clickedBtnAll {
+    isAll1 = !isAll1;
+    
+    isAll1Clicked = true;
+    clickedSectionNum = 0;
+    
+    [menu reloadData];
 }
 
 @end
