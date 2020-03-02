@@ -21,7 +21,10 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-    NSLog(@"selected: %d", selected);
+}
+
+- (IBAction)clickedBtnCheck:(UIButton *)sender {
+    [self.delegate clickedBtnCheckWithTag:self.tag];
 }
 
 @end

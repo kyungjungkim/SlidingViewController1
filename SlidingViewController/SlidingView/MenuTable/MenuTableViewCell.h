@@ -10,11 +10,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol TableViewCellDelegate <NSObject>
+
+- (void)clickedBtnCheckWithTag:(long)tag;
+
+@end
+
 @interface MenuTableViewCell : UITableViewCell
 
-
+@property (nonatomic) id<TableViewCellDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UILabel *uilGreetings;
 @property (weak, nonatomic) IBOutlet UIButton *uiBCheck;
+
+- (IBAction)clickedBtnCheck:(UIButton *)sender;
 
 @end
 

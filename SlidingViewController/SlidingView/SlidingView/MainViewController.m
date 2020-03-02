@@ -20,7 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    m_tag = 0;
     isMenuOpen = NO;
+    isAll1Clicked = true;
+    isAll1 = false;
     
     menu = [[UITableView alloc] init];
     menu.delegate = self;
@@ -134,18 +137,15 @@
     static NSString *CellIdentifier = @"Cell";
     
     cell1 = (MenuTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell1 == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MenuTableViewCell" owner:self options:nil];
-        cell1 = [nib objectAtIndex:0];
-    }
+    cell1.delegate = self;
+    cell1.tag = indexPath.row;
+    
     
     if (0 != indexPath.row) {
         cell1.uilGreetings.text = @"";
     }
     
     
-    NSLog(@"isAll1: %d", isAll1);
-    NSLog(@"isAll1Clicked: %d, clickedSectionNum: %d", isAll1Clicked, clickedSectionNum);
     if (isAll1Clicked && clickedSectionNum == 0) { // 전체버튼 클릭
         if (isAll1) { // 선택.
 //            [cell1 setSelected:YES animated:YES];
@@ -169,6 +169,22 @@
 //            if (indexPath.row == [sectionData count] - 1)   // 마지막 셀
             
             [menu layoutIfNeeded];
+        }
+    } else {
+        if (m_tag == indexPath.row) {
+            if ([@"OFF" isEqual:cell1.uiBCheck.titleLabel.text]) {
+                [cell1.uiBCheck setTitle:@"ON" forState:UIControlStateNormal];
+                [cell1.uiBCheck setTitle:@"ON" forState:UIControlStateHighlighted];
+                [cell1.uiBCheck setTitle:@"ON" forState:UIControlStateSelected];
+                
+                [menu layoutIfNeeded];
+            } else {
+                [cell1.uiBCheck setTitle:@"OFF" forState:UIControlStateNormal];
+                [cell1.uiBCheck setTitle:@"OFF" forState:UIControlStateHighlighted];
+                [cell1.uiBCheck setTitle:@"OFF" forState:UIControlStateSelected];
+                
+                [menu layoutIfNeeded];
+            }
         }
     }
     
@@ -202,6 +218,18 @@
     
     isAll1Clicked = true;
     clickedSectionNum = 0;
+    
+    [menu reloadData];
+}
+
+
+#pragma mark - TableViewCellDelegate
+
+- (void)clickedBtnCheckWithTag:(long)tag {
+    NSLog(@"tag: %ld", tag);
+    
+    isAll1Clicked = false;
+    m_tag = tag;
     
     [menu reloadData];
 }

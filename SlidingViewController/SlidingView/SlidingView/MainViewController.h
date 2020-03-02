@@ -12,12 +12,13 @@
 #import "MenuTableViewCell.h"
 
 
-@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, HeaderViewCellDelegate> {
+@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, HeaderViewCellDelegate, TableViewCellDelegate> {
     UISwipeGestureRecognizer *upSwipeGesture;
     
     UITableView *menu;
     MenuTableViewHeaderViewController *cell;
     MenuTableViewCell *cell1;
+    long m_tag;
     
     BOOL isMenuOpen;
 }

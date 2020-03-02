@@ -22,11 +22,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqH-vS-QzR">
-                        <rect key="frame" x="234" y="15" width="70" height="31"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aqH-vS-QzR">
+                        <rect key="frame" x="204" y="14" width="70" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="OFF"/>
                         <state key="highlighted" title="Highlighted"/>
+                        <connections>
+                            <action selector="clickedBtnCheck:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uQb-Ch-pTh"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
