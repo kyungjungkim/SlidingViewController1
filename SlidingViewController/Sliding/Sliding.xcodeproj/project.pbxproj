@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A122B73323AC5B4C0014A0B2 /* Sliding.h in Headers */ = {isa = PBXBuildFile; fileRef = A122B71423AC54F90014A0B2 /* Sliding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1EEE7762423A19D00AD6739 /* Sliding.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EEE7752423A19D00AD6739 /* Sliding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A122B71123AC54F90014A0B2 /* Sliding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sliding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A122B71423AC54F90014A0B2 /* Sliding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sliding.h; sourceTree = "<group>"; };
 		A122B71523AC54F90014A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1EEE7752423A19D00AD6739 /* Sliding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sliding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				A122B71423AC54F90014A0B2 /* Sliding.h */,
+				A1EEE7752423A19D00AD6739 /* Sliding.m */,
 				A122B71523AC54F90014A0B2 /* Info.plist */,
 			);
 			path = Sliding;
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EEE7762423A19D00AD6739 /* Sliding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

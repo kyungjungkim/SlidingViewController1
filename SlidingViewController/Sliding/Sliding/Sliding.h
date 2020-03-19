@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for Sliding.
 FOUNDATION_EXPORT double SlidingVersionNumber;
@@ -15,4 +16,7 @@ FOUNDATION_EXPORT double SlidingVersionNumber;
 FOUNDATION_EXPORT const unsigned char SlidingVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Sliding/PublicHeader.h>
-#import "MenuViewController.h"
+
+@interface Sliding : UIView
+
+@end

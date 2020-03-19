@@ -28,6 +28,7 @@
     menu = [[UITableView alloc] init];
     menu.delegate = self;
     menu.dataSource = self;
+    
     menu.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     menu.backgroundColor = UIColor.lightGrayColor;
     //    menu.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
