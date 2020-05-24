@@ -17,6 +17,13 @@ FOUNDATION_EXPORT const unsigned char SlidingVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Sliding/PublicHeader.h>
 
-@interface Sliding : UIView
+@interface Sliding : UIView {
+    @public
+    BOOL isMenuOpen;
+}
+
+
+- (void)menuOpenBtnClick;
+- (void)swipeMenuClose;
 
 @end
