@@ -8,7 +8,18 @@
 
 #import "Sliding.h"
 
-@implementation Sliding
+#import "MenuTable/MenuTableViewCell.h"
+#import "MenuTable/MenuTableViewHeaderViewController.h"
+
+
+@implementation Sliding {
+    UITableView *menu;
+    MenuTableViewHeaderViewController *cell;
+    MenuTableViewCell *cell1;
+    long m_tag;
+    
+    BOOL isMenuOpen;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -18,16 +29,16 @@
 }
 */
 
-/*
-- (void)init {
-    isMenuOpen = NO;
-}
+
+//- (void)init {
+//    isMenuOpen = NO;
+//}
 
 // Open the hamburger menu.
 - (void)menuOpenBtnClick {
     if (isMenuOpen == NO) {
         [UIView animateWithDuration:0.8f animations:^{
-            [self->menu setFrame:CGRectMake(0.0f, 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
+            [self->menu setFrame:CGRectMake(0.0f, 30.0f, self.bounds.size.width - 100.0f, self.bounds.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
                 self->cell.uiBCheck.frame = CGRectMake(self->cell.uiBCheck.frame.origin.x,
@@ -38,7 +49,7 @@
             }
         }];
         
-        [self.view bringSubviewToFront:menu];
+        [self bringSubviewToFront:menu];
         
         self->isMenuOpen = YES;
     }
@@ -47,7 +58,7 @@
 - (void)swipeMenuClose {
     if (isMenuOpen == YES) {
         [UIView animateWithDuration:0.8f animations:^{
-            [self->menu setFrame:CGRectMake(-(self.view.frame.size.width - 100.0f), 30.0f, self.view.frame.size.width - 100.0f, self.view.frame.size.height - 30.0f)];
+            [self->menu setFrame:CGRectMake(-(self.bounds.size.width - 100.0f), 30.0f, self.bounds.size.width - 100.0f, self.bounds.size.height - 30.0f)];
         } completion:^(BOOL finished) {
             if (finished) {
                 self->cell.uiBCheck.frame = CGRectMake(self->cell.uiBCheck.frame.origin.x,
@@ -61,6 +72,6 @@
         }];
     }
 }
-*/
+
 
 @end

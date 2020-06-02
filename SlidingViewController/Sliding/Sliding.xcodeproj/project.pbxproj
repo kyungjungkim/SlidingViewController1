@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A122B73323AC5B4C0014A0B2 /* Sliding.h in Headers */ = {isa = PBXBuildFile; fileRef = A122B71423AC54F90014A0B2 /* Sliding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A151BB5F2485F605006901CF /* MenuTable in Resources */ = {isa = PBXBuildFile; fileRef = A151BB5E2485F604006901CF /* MenuTable */; };
 		A1EEE7762423A19D00AD6739 /* Sliding.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EEE7752423A19D00AD6739 /* Sliding.m */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +16,7 @@
 		A122B71123AC54F90014A0B2 /* Sliding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sliding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A122B71423AC54F90014A0B2 /* Sliding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sliding.h; sourceTree = "<group>"; };
 		A122B71523AC54F90014A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A151BB5E2485F604006901CF /* MenuTable */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MenuTable; sourceTree = "<group>"; };
 		A1EEE7752423A19D00AD6739 /* Sliding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sliding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,7 @@
 			children = (
 				A122B71423AC54F90014A0B2 /* Sliding.h */,
 				A1EEE7752423A19D00AD6739 /* Sliding.m */,
+				A151BB5E2485F604006901CF /* MenuTable */,
 				A122B71523AC54F90014A0B2 /* Info.plist */,
 			);
 			path = Sliding;
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A151BB5F2485F605006901CF /* MenuTable in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
