@@ -8,31 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MenuTableViewHeaderViewController.h"
-#import "MenuTableViewCell.h"
+//#import "Sliding/Sliding.h"
 
-
-@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, HeaderViewCellDelegate, TableViewCellDelegate> {
-    UISwipeGestureRecognizer *upSwipeGesture;
-    
-    UITableView *menu;
-    MenuTableViewHeaderViewController *cell;
-    MenuTableViewCell *cell1;
-    long m_tag;
-    
-    BOOL isMenuOpen;
+@interface MainViewController : UIViewController {
+//    Sliding *slide;
 }
-
-@property (nonatomic) UITableView *menu;
-@property (nonatomic) MenuTableViewHeaderViewController *cell;
-@property (nonatomic) MenuTableViewCell *cell1;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *uiScrollView;
 @property (weak, nonatomic) IBOutlet UITableView *uiTableView1;
 @property (weak, nonatomic) IBOutlet UITableView *uiTableView2;
 @property (weak, nonatomic) IBOutlet UITableView *uiTableView3;
 
-
-- (IBAction)menuOpenBtnClick:(UIButton *)sender;
+- (IBAction)clickedBtnMenu:(UIButton *)sender;
 
 @end

@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A122B73323AC5B4C0014A0B2 /* Sliding.h in Headers */ = {isa = PBXBuildFile; fileRef = A122B71423AC54F90014A0B2 /* Sliding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A151BB5F2485F605006901CF /* MenuTable in Resources */ = {isa = PBXBuildFile; fileRef = A151BB5E2485F604006901CF /* MenuTable */; };
-		A1EEE7762423A19D00AD6739 /* Sliding.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EEE7752423A19D00AD6739 /* Sliding.m */; };
+		A104A9EB24CB9D6B0029251C /* SlidingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A104A9E824CB9D6B0029251C /* SlidingViewController.h */; };
+		A104A9EC24CB9D6B0029251C /* SlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A104A9E924CB9D6B0029251C /* SlidingViewController.m */; };
+		A104A9ED24CB9D6B0029251C /* SlidingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A104A9EA24CB9D6B0029251C /* SlidingViewController.xib */; };
+		A1A7AA7E24CB232300B26F4B /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = A1A7AA7D24CB232300B26F4B /* PrefixHeader.pch */; };
+		A1A7AA8824CB29CA00B26F4B /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A7AA7F24CB29CA00B26F4B /* MenuTableViewCell.xib */; };
+		A1A7AA8924CB29CA00B26F4B /* MenuTableViewHeaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A7AA8024CB29CA00B26F4B /* MenuTableViewHeaderViewController.h */; };
+		A1A7AA8A24CB29CA00B26F4B /* MenuTableViewHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A7AA8124CB29CA00B26F4B /* MenuTableViewHeaderViewController.xib */; };
+		A1A7AA8B24CB29CA00B26F4B /* MenuTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A7AA8224CB29CA00B26F4B /* MenuTableViewCell.h */; };
+		A1A7AA8C24CB29CA00B26F4B /* MenuTableViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A7AA8324CB29CA00B26F4B /* MenuTableViewHeaderCell.m */; };
+		A1A7AA8D24CB29CA00B26F4B /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A7AA8424CB29CA00B26F4B /* MenuTableViewCell.m */; };
+		A1A7AA8E24CB29CA00B26F4B /* MenuTableViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A7AA8524CB29CA00B26F4B /* MenuTableViewHeaderViewController.m */; };
+		A1A7AA8F24CB29CA00B26F4B /* MenuTableViewHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A7AA8624CB29CA00B26F4B /* MenuTableViewHeaderCell.h */; };
+		A1A7AA9024CB29CA00B26F4B /* MenuTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A7AA8724CB29CA00B26F4B /* MenuTableViewHeaderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A104A9E824CB9D6B0029251C /* SlidingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingViewController.h; sourceTree = "<group>"; };
+		A104A9E924CB9D6B0029251C /* SlidingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidingViewController.m; sourceTree = "<group>"; };
+		A104A9EA24CB9D6B0029251C /* SlidingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidingViewController.xib; sourceTree = "<group>"; };
 		A122B71123AC54F90014A0B2 /* Sliding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sliding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A122B71423AC54F90014A0B2 /* Sliding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sliding.h; sourceTree = "<group>"; };
 		A122B71523AC54F90014A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A151BB5E2485F604006901CF /* MenuTable */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MenuTable; sourceTree = "<group>"; };
-		A1EEE7752423A19D00AD6739 /* Sliding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sliding.m; sourceTree = "<group>"; };
+		A1A7AA7D24CB232300B26F4B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A1A7AA7F24CB29CA00B26F4B /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		A1A7AA8024CB29CA00B26F4B /* MenuTableViewHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewHeaderViewController.h; sourceTree = "<group>"; };
+		A1A7AA8124CB29CA00B26F4B /* MenuTableViewHeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewHeaderViewController.xib; sourceTree = "<group>"; };
+		A1A7AA8224CB29CA00B26F4B /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		A1A7AA8324CB29CA00B26F4B /* MenuTableViewHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewHeaderCell.m; sourceTree = "<group>"; };
+		A1A7AA8424CB29CA00B26F4B /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		A1A7AA8524CB29CA00B26F4B /* MenuTableViewHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewHeaderViewController.m; sourceTree = "<group>"; };
+		A1A7AA8624CB29CA00B26F4B /* MenuTableViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewHeaderCell.h; sourceTree = "<group>"; };
+		A1A7AA8724CB29CA00B26F4B /* MenuTableViewHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewHeaderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +54,7 @@
 		A122B70723AC54F90014A0B2 = {
 			isa = PBXGroup;
 			children = (
+				A1A7AA7D24CB232300B26F4B /* PrefixHeader.pch */,
 				A122B71323AC54F90014A0B2 /* Sliding */,
 				A122B71223AC54F90014A0B2 /* Products */,
 			);
@@ -50,12 +71,29 @@
 		A122B71323AC54F90014A0B2 /* Sliding */ = {
 			isa = PBXGroup;
 			children = (
-				A122B71423AC54F90014A0B2 /* Sliding.h */,
-				A1EEE7752423A19D00AD6739 /* Sliding.m */,
-				A151BB5E2485F604006901CF /* MenuTable */,
+				A104A9E824CB9D6B0029251C /* SlidingViewController.h */,
+				A104A9E924CB9D6B0029251C /* SlidingViewController.m */,
+				A104A9EA24CB9D6B0029251C /* SlidingViewController.xib */,
+				A1A7AA9224CB29ED00B26F4B /* MenuTableView */,
 				A122B71523AC54F90014A0B2 /* Info.plist */,
 			);
 			path = Sliding;
+			sourceTree = "<group>";
+		};
+		A1A7AA9224CB29ED00B26F4B /* MenuTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7AA8224CB29CA00B26F4B /* MenuTableViewCell.h */,
+				A1A7AA8424CB29CA00B26F4B /* MenuTableViewCell.m */,
+				A1A7AA7F24CB29CA00B26F4B /* MenuTableViewCell.xib */,
+				A1A7AA8624CB29CA00B26F4B /* MenuTableViewHeaderCell.h */,
+				A1A7AA8324CB29CA00B26F4B /* MenuTableViewHeaderCell.m */,
+				A1A7AA8724CB29CA00B26F4B /* MenuTableViewHeaderCell.xib */,
+				A1A7AA8024CB29CA00B26F4B /* MenuTableViewHeaderViewController.h */,
+				A1A7AA8524CB29CA00B26F4B /* MenuTableViewHeaderViewController.m */,
+				A1A7AA8124CB29CA00B26F4B /* MenuTableViewHeaderViewController.xib */,
+			);
+			path = MenuTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,7 +103,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A122B73323AC5B4C0014A0B2 /* Sliding.h in Headers */,
+				A1A7AA7E24CB232300B26F4B /* PrefixHeader.pch in Headers */,
+				A1A7AA8B24CB29CA00B26F4B /* MenuTableViewCell.h in Headers */,
+				A1A7AA8924CB29CA00B26F4B /* MenuTableViewHeaderViewController.h in Headers */,
+				A1A7AA8F24CB29CA00B26F4B /* MenuTableViewHeaderCell.h in Headers */,
+				A104A9EB24CB9D6B0029251C /* SlidingViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +138,7 @@
 		A122B70823AC54F90014A0B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = prosoft;
 				TargetAttributes = {
 					A122B71023AC54F90014A0B2 = {
@@ -127,7 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A151BB5F2485F605006901CF /* MenuTable in Resources */,
+				A1A7AA8A24CB29CA00B26F4B /* MenuTableViewHeaderViewController.xib in Resources */,
+				A1A7AA9024CB29CA00B26F4B /* MenuTableViewHeaderCell.xib in Resources */,
+				A1A7AA8824CB29CA00B26F4B /* MenuTableViewCell.xib in Resources */,
+				A104A9ED24CB9D6B0029251C /* SlidingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EEE7762423A19D00AD6739 /* Sliding.m in Sources */,
+				A1A7AA8D24CB29CA00B26F4B /* MenuTableViewCell.m in Sources */,
+				A1A7AA8E24CB29CA00B26F4B /* MenuTableViewHeaderViewController.m in Sources */,
+				A1A7AA8C24CB29CA00B26F4B /* MenuTableViewHeaderCell.m in Sources */,
+				A104A9EC24CB9D6B0029251C /* SlidingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +225,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -238,6 +288,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -264,12 +316,14 @@
 		A122B71A23AC54F90014A0B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4EU8LB7WJZ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = Sliding/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -279,20 +333,25 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.prosoft.Sliding;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A122B71B23AC54F90014A0B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4EU8LB7WJZ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = Sliding/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,8 +361,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.prosoft.Sliding;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
