@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A122B72F23AC55850014A0B2 /* Sliding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A122B72E23AC55850014A0B2 /* Sliding.framework */; };
+		A10C1BE424CBBE540055C592 /* SlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C1BE324CBBE540055C592 /* SlidingViewController.framework */; };
+		A10C1BE524CBBE540055C592 /* SlidingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A10C1BE324CBBE540055C592 /* SlidingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A12FC4CA23AC0E92004631AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12FC4C823AC0E92004631AD /* MainViewController.m */; };
 		A13BFAB423ABC3B200350020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAB323ABC3B200350020 /* AppDelegate.m */; };
 		A13BFAB723ABC3B200350020 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAB623ABC3B200350020 /* SceneDelegate.m */; };
@@ -17,8 +18,22 @@
 		A13BFAC523ABC3B900350020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAC423ABC3B900350020 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A10C1B7C24CBB0000055C592 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A10C1BE524CBBE540055C592 /* SlidingViewController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A122B72E23AC55850014A0B2 /* Sliding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sliding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10C1BE324CBBE540055C592 /* SlidingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SlidingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12FC4C823AC0E92004631AD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A12FC4C923AC0E92004631AD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A13BFAAF23ABC3B200350020 /* SlidingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A122B72F23AC55850014A0B2 /* Sliding.framework in Frameworks */,
+				A10C1BE424CBBE540055C592 /* SlidingViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +64,7 @@
 		A12FC4C523AC0D61004631AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A122B72E23AC55850014A0B2 /* Sliding.framework */,
+				A10C1BE324CBBE540055C592 /* SlidingViewController.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,6 +115,7 @@
 				A13BFAAB23ABC3B200350020 /* Sources */,
 				A13BFAAC23ABC3B200350020 /* Frameworks */,
 				A13BFAAD23ABC3B200350020 /* Resources */,
+				A10C1B7C24CBB0000055C592 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +331,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.prosoft.SlidingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -337,6 +357,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.prosoft.SlidingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

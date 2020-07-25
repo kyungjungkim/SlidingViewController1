@@ -22,7 +22,8 @@
             
     
     // Sliding
-//    slide = [[Sliding alloc] init:menu];
+//    slide = [SlidingViewController new];
+//    [self.view addSubview:slide.view];
     
     // UIScrollView
     [uiScrollView setContentSize:CGSizeMake(uiScrollView.frame.size.width * 3, uiScrollView.frame.size.height)];

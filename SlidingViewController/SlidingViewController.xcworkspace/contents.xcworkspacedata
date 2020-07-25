@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Sliding/Sliding.xcodeproj">
+      location = "group:SlidingViewController/SlidingViewController.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SlidingView/SlidingView.xcodeproj">
