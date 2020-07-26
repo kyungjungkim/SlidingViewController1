@@ -8,12 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		A10C1BDD24CBBE380055C592 /* SlidingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A10C1BDB24CBBE380055C592 /* SlidingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A188CFF424CD060C002A8519 /* Sliding.xib in Resources */ = {isa = PBXBuildFile; fileRef = A188CFF124CD060C002A8519 /* Sliding.xib */; };
+		A188CFF524CD060C002A8519 /* Sliding.h in Headers */ = {isa = PBXBuildFile; fileRef = A188CFF224CD060C002A8519 /* Sliding.h */; };
+		A188CFF624CD060C002A8519 /* Sliding.m in Sources */ = {isa = PBXBuildFile; fileRef = A188CFF324CD060C002A8519 /* Sliding.m */; };
+		A188CFF824CD0634002A8519 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = A188CFF724CD0634002A8519 /* PrefixHeader.pch */; };
+		A188D00224CD067F002A8519 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A188CFF924CD067F002A8519 /* MenuTableViewCell.xib */; };
+		A188D00324CD067F002A8519 /* MenuTableViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A188CFFA24CD067F002A8519 /* MenuTableViewHeaderCell.m */; };
+		A188D00424CD067F002A8519 /* MenuTableViewHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A188CFFB24CD067F002A8519 /* MenuTableViewHeaderViewController.xib */; };
+		A188D00524CD067F002A8519 /* MenuTableViewHeaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A188CFFC24CD067F002A8519 /* MenuTableViewHeaderViewController.h */; };
+		A188D00624CD067F002A8519 /* MenuTableViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A188CFFD24CD067F002A8519 /* MenuTableViewHeaderCell.xib */; };
+		A188D00724CD067F002A8519 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A188CFFE24CD067F002A8519 /* MenuTableViewCell.m */; };
+		A188D00824CD067F002A8519 /* MenuTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A188CFFF24CD067F002A8519 /* MenuTableViewCell.h */; };
+		A188D00924CD067F002A8519 /* MenuTableViewHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A188D00024CD067F002A8519 /* MenuTableViewHeaderCell.h */; };
+		A188D00A24CD067F002A8519 /* MenuTableViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A188D00124CD067F002A8519 /* MenuTableViewHeaderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A10C1BD824CBBE380055C592 /* SlidingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlidingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C1BDB24CBBE380055C592 /* SlidingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingViewController.h; sourceTree = "<group>"; };
 		A10C1BDC24CBBE380055C592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A188CFF124CD060C002A8519 /* Sliding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Sliding.xib; sourceTree = "<group>"; };
+		A188CFF224CD060C002A8519 /* Sliding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sliding.h; sourceTree = "<group>"; };
+		A188CFF324CD060C002A8519 /* Sliding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sliding.m; sourceTree = "<group>"; };
+		A188CFF724CD0634002A8519 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A188CFF924CD067F002A8519 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		A188CFFA24CD067F002A8519 /* MenuTableViewHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewHeaderCell.m; sourceTree = "<group>"; };
+		A188CFFB24CD067F002A8519 /* MenuTableViewHeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewHeaderViewController.xib; sourceTree = "<group>"; };
+		A188CFFC24CD067F002A8519 /* MenuTableViewHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewHeaderViewController.h; sourceTree = "<group>"; };
+		A188CFFD24CD067F002A8519 /* MenuTableViewHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewHeaderCell.xib; sourceTree = "<group>"; };
+		A188CFFE24CD067F002A8519 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		A188CFFF24CD067F002A8519 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		A188D00024CD067F002A8519 /* MenuTableViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewHeaderCell.h; sourceTree = "<group>"; };
+		A188D00124CD067F002A8519 /* MenuTableViewHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewHeaderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +56,7 @@
 		A10C1BCE24CBBE380055C592 = {
 			isa = PBXGroup;
 			children = (
+				A188CFF724CD0634002A8519 /* PrefixHeader.pch */,
 				A10C1BDA24CBBE380055C592 /* SlidingViewController */,
 				A10C1BD924CBBE380055C592 /* Products */,
 			);
@@ -46,10 +73,30 @@
 		A10C1BDA24CBBE380055C592 /* SlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A188D00B24CD0690002A8519 /* MenuTable */,
+				A188CFF224CD060C002A8519 /* Sliding.h */,
+				A188CFF324CD060C002A8519 /* Sliding.m */,
+				A188CFF124CD060C002A8519 /* Sliding.xib */,
 				A10C1BDB24CBBE380055C592 /* SlidingViewController.h */,
 				A10C1BDC24CBBE380055C592 /* Info.plist */,
 			);
 			path = SlidingViewController;
+			sourceTree = "<group>";
+		};
+		A188D00B24CD0690002A8519 /* MenuTable */ = {
+			isa = PBXGroup;
+			children = (
+				A188CFFF24CD067F002A8519 /* MenuTableViewCell.h */,
+				A188CFFE24CD067F002A8519 /* MenuTableViewCell.m */,
+				A188CFF924CD067F002A8519 /* MenuTableViewCell.xib */,
+				A188D00024CD067F002A8519 /* MenuTableViewHeaderCell.h */,
+				A188CFFA24CD067F002A8519 /* MenuTableViewHeaderCell.m */,
+				A188CFFD24CD067F002A8519 /* MenuTableViewHeaderCell.xib */,
+				A188CFFC24CD067F002A8519 /* MenuTableViewHeaderViewController.h */,
+				A188D00124CD067F002A8519 /* MenuTableViewHeaderViewController.m */,
+				A188CFFB24CD067F002A8519 /* MenuTableViewHeaderViewController.xib */,
+			);
+			path = MenuTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +107,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10C1BDD24CBBE380055C592 /* SlidingViewController.h in Headers */,
+				A188D00524CD067F002A8519 /* MenuTableViewHeaderViewController.h in Headers */,
+				A188D00924CD067F002A8519 /* MenuTableViewHeaderCell.h in Headers */,
+				A188D00824CD067F002A8519 /* MenuTableViewCell.h in Headers */,
+				A188CFF524CD060C002A8519 /* Sliding.h in Headers */,
+				A188CFF824CD0634002A8519 /* PrefixHeader.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A188D00224CD067F002A8519 /* MenuTableViewCell.xib in Resources */,
+				A188D00624CD067F002A8519 /* MenuTableViewHeaderCell.xib in Resources */,
+				A188D00424CD067F002A8519 /* MenuTableViewHeaderViewController.xib in Resources */,
+				A188CFF424CD060C002A8519 /* Sliding.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A188CFF624CD060C002A8519 /* Sliding.m in Sources */,
+				A188D00724CD067F002A8519 /* MenuTableViewCell.m in Sources */,
+				A188D00A24CD067F002A8519 /* MenuTableViewHeaderViewController.m in Sources */,
+				A188D00324CD067F002A8519 /* MenuTableViewHeaderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +322,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = SlidingViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -272,7 +334,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.ProSoft.SlidingViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -285,6 +348,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = SlidingViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,7 +360,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.ProSoft.SlidingViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
