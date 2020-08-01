@@ -1,5 +1,5 @@
 //
-//  SlidingViewController.m
+//  Sliding.m
 //  Sliding
 //
 //  Created by Kyungjung Kim on 2020/07/25.

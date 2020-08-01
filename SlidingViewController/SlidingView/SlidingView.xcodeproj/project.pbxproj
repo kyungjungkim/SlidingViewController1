@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10C1BE424CBBE540055C592 /* SlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C1BE324CBBE540055C592 /* SlidingViewController.framework */; };
-		A10C1BE524CBBE540055C592 /* SlidingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A10C1BE324CBBE540055C592 /* SlidingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A12FC4CA23AC0E92004631AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12FC4C823AC0E92004631AD /* MainViewController.m */; };
 		A13BFAB423ABC3B200350020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAB323ABC3B200350020 /* AppDelegate.m */; };
 		A13BFAB723ABC3B200350020 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAB623ABC3B200350020 /* SceneDelegate.m */; };
@@ -16,6 +14,8 @@
 		A13BFABF23ABC3B900350020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13BFABE23ABC3B900350020 /* Assets.xcassets */; };
 		A13BFAC223ABC3B900350020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13BFAC023ABC3B900350020 /* LaunchScreen.storyboard */; };
 		A13BFAC523ABC3B900350020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAC423ABC3B900350020 /* main.m */; };
+		A18059E924CD42DC009CA53E /* SlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18059E724CD42A4009CA53E /* SlidingViewController.framework */; };
+		A18059EA24CD42DC009CA53E /* SlidingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A18059E724CD42A4009CA53E /* SlidingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A10C1BE524CBBE540055C592 /* SlidingViewController.framework in Embed Frameworks */,
+				A18059EA24CD42DC009CA53E /* SlidingViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A10C1BE324CBBE540055C592 /* SlidingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SlidingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12FC4C823AC0E92004631AD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A12FC4C923AC0E92004631AD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A13BFAAF23ABC3B200350020 /* SlidingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +45,7 @@
 		A13BFAC123ABC3B900350020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A13BFAC323ABC3B900350020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13BFAC423ABC3B900350020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A18059E724CD42A4009CA53E /* SlidingViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SlidingViewController.framework; sourceTree = "<group>"; };
 		A1A7AAA724CB3DA800B26F4B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10C1BE424CBBE540055C592 /* SlidingViewController.framework in Frameworks */,
+				A18059E924CD42DC009CA53E /* SlidingViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		A12FC4C523AC0D61004631AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A10C1BE324CBBE540055C592 /* SlidingViewController.framework */,
+				A18059E724CD42A4009CA53E /* SlidingViewController.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,8 +322,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
-				DEVELOPMENT_TEAM = 4EU8LB7WJZ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = SlidingView/Info.plist;
@@ -349,8 +353,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
-				DEVELOPMENT_TEAM = 4EU8LB7WJZ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = SlidingView/Info.plist;

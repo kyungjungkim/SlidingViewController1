@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SlidingViewController/SlidingViewController.h>
+
 
 @interface MainViewController : UIViewController {
-//    SlidingViewController *slide;
+//    Sliding *slide;
 }
 
 @property (weak, nonatomic) IBOutlet UIScrollView *uiScrollView;

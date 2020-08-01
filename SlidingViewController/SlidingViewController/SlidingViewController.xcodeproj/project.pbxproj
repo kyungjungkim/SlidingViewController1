@@ -73,11 +73,11 @@
 		A10C1BDA24CBBE380055C592 /* SlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A188D00B24CD0690002A8519 /* MenuTable */,
+				A10C1BDB24CBBE380055C592 /* SlidingViewController.h */,
 				A188CFF224CD060C002A8519 /* Sliding.h */,
 				A188CFF324CD060C002A8519 /* Sliding.m */,
 				A188CFF124CD060C002A8519 /* Sliding.xib */,
-				A10C1BDB24CBBE380055C592 /* SlidingViewController.h */,
+				A188D00B24CD0690002A8519 /* MenuTable */,
 				A10C1BDC24CBBE380055C592 /* Info.plist */,
 			);
 			path = SlidingViewController;
@@ -326,6 +326,7 @@
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = SlidingViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,6 +353,7 @@
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = SlidingViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

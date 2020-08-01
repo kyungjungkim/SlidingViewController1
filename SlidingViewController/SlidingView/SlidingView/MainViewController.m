@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import <SlidingViewController/SlidingViewController.h>
+
 
 @interface MainViewController ()
 
@@ -22,8 +24,8 @@
             
     
     // Sliding
-//    slide = [SlidingViewController new];
-//    [self.view addSubview:slide.view];
+    slide = [Sliding new];
+    [self.view addSubview:slide.view];
     
     // UIScrollView
     [uiScrollView setContentSize:CGSizeMake(uiScrollView.frame.size.width * 3, uiScrollView.frame.size.height)];

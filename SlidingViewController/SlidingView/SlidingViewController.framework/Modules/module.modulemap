@@ -1,0 +1,6 @@
+framework module SlidingViewController {
+  umbrella header "SlidingViewController.h"
+
+  export *
+  module * { export * }
+}
