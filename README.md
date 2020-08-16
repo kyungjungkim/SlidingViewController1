@@ -1,9 +1,9 @@
 # SlidingViewController1
 
-<img src="Screen Shot 1.png" align="left" hspace="10" vspace="10" height="150">
-<img src="Screen Shot 3.png" align="left" hspace="10" vspace="10" height="150">
-<img src="Screen Shot 4.png" align="left" hspace="10" vspace="10" height="150">
-<img src="Screen Shot 5.png" align="left" hspace="10" vspace="10" height="150">
+<img src="Screen Shot 1.png" align="left" hspace="10" vspace="10" height="200">
+<img src="Screen Shot 3.png" align="left" hspace="10" vspace="10" height="200">
+<img src="Screen Shot 4.png" align="left" hspace="10" vspace="10" height="200">
+<img src="Screen Shot 5.png" align="left" hspace="10" vspace="10" height="200">
 
 
 
