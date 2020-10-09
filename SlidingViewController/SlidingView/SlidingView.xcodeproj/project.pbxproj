@@ -14,18 +14,18 @@
 		A13BFABF23ABC3B900350020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13BFABE23ABC3B900350020 /* Assets.xcassets */; };
 		A13BFAC223ABC3B900350020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13BFAC023ABC3B900350020 /* LaunchScreen.storyboard */; };
 		A13BFAC523ABC3B900350020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BFAC423ABC3B900350020 /* main.m */; };
-		A18059E924CD42DC009CA53E /* SlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18059E724CD42A4009CA53E /* SlidingViewController.framework */; };
-		A18059EA24CD42DC009CA53E /* SlidingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A18059E724CD42A4009CA53E /* SlidingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A185CD7624D5934B00744D46 /* SlidingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18059E724CD42A4009CA53E /* SlidingViewController.framework */; };
+		A185CD7724D5934B00744D46 /* SlidingViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A18059E724CD42A4009CA53E /* SlidingViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A10C1B7C24CBB0000055C592 /* Embed Frameworks */ = {
+		A185CD7824D5934B00744D46 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A18059EA24CD42DC009CA53E /* SlidingViewController.framework in Embed Frameworks */,
+				A185CD7724D5934B00744D46 /* SlidingViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18059E924CD42DC009CA53E /* SlidingViewController.framework in Frameworks */,
+				A185CD7624D5934B00744D46 /* SlidingViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 				A13BFAAB23ABC3B200350020 /* Sources */,
 				A13BFAAC23ABC3B200350020 /* Frameworks */,
 				A13BFAAD23ABC3B200350020 /* Resources */,
-				A10C1B7C24CBB0000055C592 /* Embed Frameworks */,
+				A185CD7824D5934B00744D46 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
